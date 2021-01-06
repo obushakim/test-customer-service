@@ -1,5 +1,7 @@
 package com.irfan.customer.entity;
 
+import java.util.Date;
+
 import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
@@ -36,4 +38,10 @@ public class Customer {
 
 	@Column(name = "address", nullable = false)
 	private String address;
+
+	@Column(name = "created_date", nullable = false)
+	private Date createdDate;
+
+	@Column(name = "modified_date", nullable = false)
+	private Date modifiedDate;
 }
